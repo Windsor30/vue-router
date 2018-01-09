@@ -58,13 +58,13 @@ var Left = Vue.component("Left",{
             <ul>
                <div v-for="item in data">
                  <li>
-                    <router-link :to="'#'+item.id" active-class="aa" class="link" :id="'a'+item.id">
+                    <router-link :to="'#'+item.id">
                        {{item.title}}
                     </router-link>
                  </li>
                  <ul>
                     <li v-for="item1 in item.child">
-                    <router-link :to="'#'+item1.id" :id="'a'+item1.id" active-class="bb" class="link1">
+                    <router-link :to="'#'+item1.id">
                     {{item1.title}}
 </router-link>
                     
